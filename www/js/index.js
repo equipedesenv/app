@@ -1,9 +1,4 @@
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-    // Now safe to use the PhoneGap API.
-    document.getElementById("openBrowser").addEventListener("click", openBrowser);
-}
+document.addEventListener("deviceready", openBrowser, false);
 
 function openBrowser() {
    var url = 'http://www.poamobilidade.com.br';
