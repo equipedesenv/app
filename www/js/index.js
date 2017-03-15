@@ -9,7 +9,7 @@ function openBrowser() {
    var url = 'https://cordova.apache.org';
    var target = '_self';
    var options = "location=yes"
-   var ref = cordova.open(url, target, options);
+   var ref = window.open(url, target, options);
 
    ref.addEventListener('loadstart', loadstartCallback);
    ref.addEventListener('loadstop', loadstopCallback);
