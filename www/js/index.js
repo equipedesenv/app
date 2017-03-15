@@ -6,7 +6,7 @@ function onDeviceReady() {
 }
 
 function openBrowser() {
-   var url = 'https://cordova.apache.org';
+   var url = 'http://www.poamobilidade.com.br';
    var target = '_self';
    var options = "location=yes"
    var ref = window.open(url, target, options);
