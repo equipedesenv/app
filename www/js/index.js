@@ -8,13 +8,14 @@ function onDeviceReady() {
 function openBrowser() {
    var url = 'https://cordova.apache.org';
    var target = '_self';
-   var options = "location=yes"
-   var ref = window.open(url, target, options);
+   var options = "location=yes";
+   //var ref = 
+   window.location.href = url;
 
-   ref.addEventListener('loadstart', loadstartCallback);
+   /*ref.addEventListener('loadstart', loadstartCallback);
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);
-   ref.addEventListener('exit', exitCallback);
+   ref.addEventListener('exit', exitCallback);*/
 
    function loadstartCallback(event) {
       console.log('Loading started: '  + event.url)
