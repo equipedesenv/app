@@ -7,7 +7,7 @@ function onDeviceReady() {
 
 function openBrowser() {
    var url = 'https://cordova.apache.org';
-   var target = '_blank';
+   var target = '_self';
    var options = "location=yes"
    var ref = window.open(url, target, options);
 
