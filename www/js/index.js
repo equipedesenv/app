@@ -1,12 +1,12 @@
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", openBrowser, false);
 
 function onDeviceReady() {
     // Now safe to use the PhoneGap API.
-    document.getElementById("openBrowser").addEventListener("click", openBrowser);
+    openBrowser();
 }
 
 function openBrowser() {
-   var url = 'https://cordova.apache.org';
+   var url = 'https://www.poamobilidade.com.br';
    var target = '_self';
    var options = "location=yes"
    var ref = window.open(url, target, options);
